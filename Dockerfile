@@ -14,15 +14,11 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Set the sources
 # ------------------------------------------------------------
 
-RUN echo 'deb http://ubuntu.mirror.rain.co.za/ubuntu/ groovy main restricted universe multiverse\n'\
-'deb http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-security main restricted universe multiverse\n'\
-'deb http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-updates main restricted universe multiverse\n'\
-'deb http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-backports main restricted universe multiverse\n'\
-'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ groovy main restricted universe multiverse\n'\
-'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-security main restricted universe multiverse\n'\
-'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-updates main restricted universe multiverse\n'\
-'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-proposed main restricted universe multiverse\n'\
-'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-backports main restricted universe multiverse\n'\
+RUN echo 'deb http://it.archive.ubuntu.com/ubuntu/ groovy main universe restricted multiverse\n'\
+'deb-src http://it.archive.ubuntu.com/ubuntu/ groovy main universe restricted multiverse\n'\
+'deb http://security.ubuntu.com/ubuntu groovy-security main universe restricted multiverse\n'\
+'deb-src http://security.ubuntu.com/ubuntu groovy-security main universe restricted multiverse\n'\
+
 '' > /etc/apt/sources.list
 
 # ------------------------------------------------------------
