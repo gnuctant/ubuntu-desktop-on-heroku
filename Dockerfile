@@ -2,7 +2,7 @@
 # Start with Ubuntu Groovy Gorilla
 # ------------------------------------------------------------
 
-FROM ubuntu:20.10
+FROM ubuntu:20.04
 
 # ------------------------------------------------------------
 # Set environment variables
@@ -14,12 +14,12 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Set the sources
 # ------------------------------------------------------------
 
-RUN echo 'deb http://it.archive.ubuntu.com/ubuntu/ groovy main universe restricted multiverse\n'\
-'deb-src http://it.archive.ubuntu.com/ubuntu/ groovy main universe restricted multiverse\n'\
-'deb http://security.ubuntu.com/ubuntu groovy-security main universe restricted multiverse\n'\
-'deb-src http://security.ubuntu.com/ubuntu groovy-security main universe restricted multiverse\n'\
-
+RUN echo 'deb http://us.archive.ubuntu.com/ubuntu/ focal main universe restricted multiverse\n'\
+'deb-src http://us.archive.ubuntu.com/ubuntu/ focal main universe restricted multiverse\n'\
+'deb http://security.ubuntu.com/ubuntu focal-security main universe restricted multiverse\n'\
+'deb-src http://security.ubuntu.com/ubuntu focal-security main universe restricted multiverse\n'\
 '' > /etc/apt/sources.list
+
 
 # ------------------------------------------------------------
 # Install and Configure
