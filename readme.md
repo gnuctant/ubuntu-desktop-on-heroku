@@ -4,7 +4,7 @@ A [Heroku](https://www.heroku.com/) install of [Ubuntu 20.10 (Groovy Gorilla)](h
 
 Do an automated deploy to Heroku:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new-app?template=https://github.com/gnuctant/ubuntu-desktop-on-heroku)
 
 ## Built With
 
